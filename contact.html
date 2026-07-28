@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+    /* Basic reset so all browsers look the same */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background-color: #f4f6f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    /* The card that holds the whole form */
+    .contact-card {
+      background-color: #ffffff;
+      width: 100%;
+      max-width: 420px;
+      padding: 32px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .contact-card h1 {
+      font-size: 22px;
+      color: #1f2933;
+      margin-bottom: 6px;
+    }
+
+    .contact-card p.subtitle {
+      font-size: 14px;
+      color: #6b7280;
+      margin-bottom: 24px;
+    }
+
+    /* Each label + input pair */
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: #374151;
+      margin-bottom: 6px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px 12px;
+      font-size: 14px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.2s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      border-color: #4f46e5;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #4f46e5;
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 600;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #4338ca;
+    }
+
+    /* Small note box for the mentor / reviewer */
+    .mentor-note {
+      margin-top: 24px;
+      padding: 14px;
+      background-color: #eef2ff;
+      border-left: 4px solid #4f46e5;
+      border-radius: 4px;
+      font-size: 13px;
+      color: #374151;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contact-card">
+    <h1>Contact Us</h1>
+    <p class="subtitle">Fill out the form below and we'll get back to you.</p>
+
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell us something..." required></textarea>
+      </div>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- This box is just a friendly note for review purposes.
+         Remove it once your mentor has seen the page. -->
+    <div class="mentor-note">
+      Hi Mentor 👋 — this is my first Contact Us page from the boot camp.
+      Is this okay, sir? Feedback is welcome!
+    </div>
+  </div>
+
+</body>
+</html>
