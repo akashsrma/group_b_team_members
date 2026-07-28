@@ -4,12 +4,81 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="about.html" />
+    <title>Simple Project — Home</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>WELCOME</h1>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="logo">Project Name</h1>
+        <nav class="nav">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About</a>
+        </nav>
+      </div>
+    </header>
 
-    <h2>About Team Members</h2>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h2>Welcome to our simple HTML & CSS project</h2>
+          <p>A minimal, responsive UI for a 4-member team.</p>
+        </div>
+      </section>
+
+      <section class="team container">
+        <h3>Team Members</h3>
+        <div class="team-grid">
+          <article class="member">
+            <div class="avatar">A</div>
+            <h4>Alice Smith</h4>
+            <p>Frontend Developer</p>
+          </article>
+          <article class="member">
+            <div class="avatar">B</div>
+            <h4>Bob Johnson</h4>
+            <p>Backend Developer</p>
+          </article>
+          <article class="member">
+            <div class="avatar">C</div>
+            <h4>Carol Lee</h4>
+            <p>Designer</p>
+          </article>
+          <article class="member">
+            <div class="avatar">D</div>
+            <h4>David Kim</h4>
+            <p>Project Manager</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact container">
+        <h3>Contact</h3>
+        <p>Use the form below to collect messages (no backend required).</p>
+        <form class="contact-form">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" />
+          </label>
+          <label>
+            Message
+            <textarea
+              name="message"
+              rows="4"
+              placeholder="Your message"
+            ></textarea>
+          </label>
+          <button type="submit">Send (demo)</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© 2026 Project Name — Simple HTML/CSS demo</div>
+    </footer>
   </body>
 </html>
